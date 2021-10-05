@@ -1,3 +1,4 @@
+# Please note that below mentioned label(app=auto-deployment) and Data(Deployment* fields) are mandatory
 apiVersion: v1
 kind: ConfigMap
 metadata:
