@@ -10,12 +10,13 @@ Once the application is running, user can spawn a deployment via configmaps.
 
 ``` {.sourceCode .bash}
 Just mention the foll. fields in your configmap to deploy an image automatically as a deployment;
-1. label: 
-        app=auto-deployment
-2. data: 
-        DeploymentName: sample-deployment
-        DeploymentReplicas: "1"
-        DeploymentImage: busybox:latest
+metadata
+    labels: 
+        app:auto-deployment
+data: 
+    DeploymentName: sample-deployment
+    DeploymentReplicas: "1"
+    DeploymentImage: busybox:latest
 ```
 
 Resultant deployment will inherit the namespace from configmap.
