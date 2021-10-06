@@ -47,7 +47,7 @@ Terminal session 1 - Watch the deployments
 Terminal session 2 - Create a configmap with mandatory fields
 
 ``` {.sourceCode .bash}
-> kubectl apply -f test/
+> kubectl apply -f konfig-deployer/test/
 ```
 You can now see a new deployment running in Terminal session 1
 
