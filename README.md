@@ -28,10 +28,12 @@ Resultant deployment will inherit the namespace from configmap.
 
 Prerequisites: A k8s cluster and a kubectl CLI configured to interact with the cluster.
 
-Run following command to install the application on your k8s-cluster
+Step 1: Download or clone this repository
+
+Step 2: Run following command to install the application on your k8s-cluster
 
 ``` {.sourceCode .bash}
-> kubectl apply -f manifests/
+> kubectl apply -f konfig-deployer/manifests/
 ```
 
 ## How to test konfig-deployer?
