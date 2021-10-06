@@ -17,7 +17,7 @@ Just mention the following fields in your configmap to deploy an image automatic
 
 Resultant deployment will inherit the namespace from configmap
 
-### Deploy konfig-deployer:
+### How to run konfig-deployer?
 
 Prerequisites: A k8s cluster and a kubectl CLI configured to interact with the cluster
 
