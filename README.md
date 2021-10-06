@@ -6,10 +6,10 @@ Let's say you want to provide users another way to create deployments. Since cre
 
 ## How it works?
 
-Once the application is running, user can spawn a deployment via configmaps. 
+Once the application is running, user can spawn a deployment via configmaps.
 
-``` {.sourceCode .bash}
 Just mention the foll. fields in your configmap to deploy an image automatically as a deployment;
+``` {.sourceCode .bash}
 metadata
     labels: 
         app:auto-deployment
@@ -18,7 +18,6 @@ data:
     DeploymentReplicas: "1"
     DeploymentImage: busybox:latest
 ```
-
 Resultant deployment will inherit the namespace from configmap.
 
 ## How to run konfig-deployer?
