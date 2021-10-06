@@ -10,9 +10,13 @@ Once the application is running, user can spawn a deployment via configmaps.
 
 Just mention the foll. fields in your configmap to deploy an image automatically as a deployment;
 ``` {.sourceCode .bash}
-metadata
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    # Update the name
+    name: sample-configmap
     labels: 
-        app:auto-deployment
+        app: auto-deployment
 data: 
     DeploymentName: sample-deployment
     DeploymentReplicas: "1"
