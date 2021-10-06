@@ -6,23 +6,24 @@ Let's say you want to provide users another way to create deployments. Since cre
 
 ### Execution intructions:
 
-Terminal session 1 - Running the application binary
+Terminal session 1 - Run the application binary
 
 ``` {.sourceCode .bash}
 > ./bin/konfig-deployer
 ```
 
-Terminal session 2 - Creating a configMap using the template
+Terminal session 2 - Monitor the deployments
+
+``` {.sourceCode .bash}
+> kubectl get deployments -n default -w
+```
+
+Terminal session 3 - Create a configMap using the template (Check the deployment logs in Terminal session 1 & 2)
 
 ``` {.sourceCode .bash}
 > kubectl apply -f ./template/configmap-auto-deploy.yaml
 ```
 
-Terminal session 3 - Monitoring the deployments
-
-``` {.sourceCode .bash}
-> kubectl get deployments -n default -w
-```
-Note: Check the namespace in template prior to running above command
+Note: Namespace mentioned in ./template/configmap-auto-deploy.yaml file and 'kubectl get deployments' command should be the same
 
 Thank you :)
