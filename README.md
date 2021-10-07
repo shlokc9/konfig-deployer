@@ -8,7 +8,7 @@ Let's say you want to provide users another way to create deployments. Since cre
 
 Once the application is running, user can spawn a deployment via configmaps.
 
-Just mention the foll. fields in your configmap to deploy an image automatically as a deployment;
+Just mention the foll. mandatory fields and labels in your configmap to deploy an image automatically as a deployment;
 ``` {.sourceCode .bash}
 apiVersion: v1
 kind: ConfigMap
