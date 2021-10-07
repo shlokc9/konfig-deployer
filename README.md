@@ -24,7 +24,7 @@ data:
 ```
 Resultant deployment will inherit the namespace from configmap.
 
-## How to run konfig-deployer?
+## How to install konfig-deployer?
 
 Prerequisites: A k8s cluster and a kubectl CLI configured to interact with the cluster.
 
