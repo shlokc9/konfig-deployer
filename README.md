@@ -1,4 +1,6 @@
-# konfig-deployer - automate your deployments
+# konfig-deployer
+
+Automate your deployments
 
 ## Motivation: 
 
